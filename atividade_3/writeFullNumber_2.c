@@ -8,11 +8,6 @@ int main()
   scanf("%d", &number);
   getchar();
 
-  if (number <= 0 && number > 10)
-  {
-    return;
-  }
-
   printf("O numero digitado foi: ");
 
   switch (number)
@@ -42,6 +37,10 @@ int main()
     printf("Nove");
   case 10:
     printf("Dez");
+    break;
+  default:
+    printf("Numero invalido");
+    break;
   }
 
   return 0;
